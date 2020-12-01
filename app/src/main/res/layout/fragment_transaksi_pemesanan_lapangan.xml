@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#EB000000"
+    tools:context=".fragments.transaksiPemesananLapanganFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A1A39F"
+        android:padding="10dp"
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#FBFBFB">
+
+            <Spinner
+                android:id="@+id/spinnerTransaksi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:backgroundTint="#7A2828" />
+            <EditText
+                android:drawableStart="@drawable/ic_baseline_calendar_today_24"
+                android:gravity="center"
+                android:id="@+id/etTanggalMain"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="Tanggal Main"
+                android:inputType="date" />
+            <EditText
+                android:drawableStart="@drawable/ic_baseline_access_time_24"
+                android:id="@+id/etWaktuMulai"
+                android:gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="Jam Mulai"/>
+            <EditText
+                android:drawableStart="@drawable/ic_baseline_access_time_24"
+                android:gravity="center"
+                android:id="@+id/etJamSelesai"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="Jam Selesai"/>
+            <Button
+                android:id="@+id/btnHitung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hitung"
+                android:clickable="true"/>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/hargaTransaksi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/hargaTransaksiCek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/idPelangganPesan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="id pelanggan"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/idLapangan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="id lapangan"
+                android:visibility="gone"/>
+            <EditText
+                android:id="@+id/tvJamMulai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                />
+            <EditText
+                android:id="@+id/tvJamSelesai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="30dp"
+            android:background="#5F82A1">
+            <Button
+                android:id="@+id/btnSavePesan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIMPAN"
+                android:clickable="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

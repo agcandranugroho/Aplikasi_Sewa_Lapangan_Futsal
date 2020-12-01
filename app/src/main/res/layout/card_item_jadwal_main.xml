@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1,2,3,4"
+    android:background="#000000"
+    >
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/CI_tanggal"
+            android:layout_width="100dp"
+            android:textColor="@color/colorWhite"
+            />
+        <TextView
+            android:id="@+id/CI_lapangan"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorWhite"
+            />
+        <TextView
+            android:id="@+id/CI_jamMulai"
+            android:textColor="@color/colorWhite"
+            />
+        <TextView
+            android:id="@+id/CI_jamSelesai"
+            android:textColor="@color/colorWhite"
+            />
+    </TableRow>
+</TableLayout>

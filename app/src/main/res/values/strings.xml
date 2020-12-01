@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SportAcademy1</string>
+    <string name="selamat_datang">Selamat datang</string>
+    <string name="utama">Utama</string>
+    <string name="transaksi">Transaksi</string>
+    <string name="jadwal_main">Jadwal Main</string>
+    <string name="profil">Profil</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

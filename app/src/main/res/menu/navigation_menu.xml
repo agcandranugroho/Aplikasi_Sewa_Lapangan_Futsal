@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <item
+            android:id="@+id/Home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/utama"
+            />
+        <item
+            android:id="@+id/jadwalManiHome"
+            android:icon="@drawable/ic_baseline_jadwal"
+            android:title="@string/jadwal_main"
+            />
+        <item
+            android:id="@+id/transaksiHome"
+            android:icon="@drawable/ic_baseline_sync_alt_24"
+            android:title="@string/transaksi"
+            />
+        <item
+            android:id="@+id/pembayaranHome"
+            android:icon="@drawable/ic_baseline_pembayaran"
+            android:title="Pembayaran"
+            />
+        <item
+            android:id="@+id/profilHome"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="@string/profil"
+            />
+
+</menu>

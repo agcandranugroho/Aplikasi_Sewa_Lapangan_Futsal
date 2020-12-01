@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="15dp"
+       android:background="#F3EDED">
+       <LinearLayout
+           android:layout_weight="1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:background="#000"
+           android:paddingTop="10dp"
+           android:paddingBottom="10dp"
+           android:paddingLeft="10dp"
+           android:paddingRight="0dp">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="ID Pemesanan : "
+               android:textStyle="bold"
+               android:textColor="@color/colorWhite"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Lapangan         : "
+               android:textColor="@color/colorWhite"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Tanggal Main   : "
+               android:textColor="@color/colorWhite"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Jam Main         : "
+               android:textColor="@color/colorWhite"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Harga                 : "
+               android:textColor="@color/colorWhite"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Status                : "
+               android:textColor="@color/colorWhite"/>
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_weight="10"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:background="#000"
+           android:paddingTop="10dp"
+           android:paddingBottom="10dp"
+           >
+           <TextView
+               android:id="@+id/id_pembayaranRCV"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:visibility="gone"/>
+           <TextView
+               android:id="@+id/id_pemesananRCV"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="id pemesanan"
+               android:textColor="@color/colorWhite"/>
+           <TextView
+               android:id="@+id/nama_lapanganRCV"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="lapangan"
+               android:textColor="@color/colorWhite"/>
+           <TextView
+               android:id="@+id/tanggalRCV"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="tanggal"
+               android:textColor="@color/colorWhite"/>
+           <TextView
+               android:id="@+id/jamMainRCV"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Jam Main"
+               android:textColor="@color/colorWhite"/>
+           <TextView
+               android:id="@+id/totalHargaRCV"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="total"
+               android:textColor="@color/colorWhite"/>
+           <TextView
+               android:id="@+id/statusPembayaranRCV"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="status"
+               android:textColor="@color/colorWhite"/>
+       </LinearLayout>
+   </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".fragments.recyclerViewJadwalMain"
+    android:stretchColumns="1,2,3,4"
+    android:padding="5dp"
+    >
+
+    <EditText
+        android:id="@+id/cariJadwal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/search_bg"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:hint="Cari "
+        android:focusable="false"
+        android:inputType="date"
+        android:padding="10dp" />
+    <Button
+        android:id="@+id/btnCari"
+        android:text="Cari"
+        />
+    <TableRow android:background="#3AB541">
+        <TextView
+            android:id="@+id/tanggal"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:text="Tanggal Main"
+            android:padding="5dp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lapangan"
+            android:layout_column="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Lapangan"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/jamMulai"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="Jam Mulai"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/jamSelesai"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="Jam Selesai"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RV_jadwalMain"
+        android:layout_width="match_parent"
+        android:layout_height="552dp" />
+
+</TableLayout>

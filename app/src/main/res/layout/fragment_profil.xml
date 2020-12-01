@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.profilFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="#B969A0E4"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#FFFFFF"
+                android:src="@drawable/ic_baseline_sports_soccer_24"/>
+            <TextView
+                android:id="@+id/usernameProfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+            <ImageButton
+                android:id="@+id/btnEditProfil"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:text="Edit"
+                android:clickable="true"
+                android:src="@drawable/ic_baseline_edit_24"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nama "
+                    android:textSize="10sp"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Username "
+                    android:textSize="10sp"
+                    android:padding="10dp"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Email "
+                    android:textSize="10sp"
+                    android:padding="10dp"/>
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nomor Telepon "
+                    android:textSize="10sp"
+                    android:padding="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/namaProfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="10sp"
+                    android:padding="10dp"
+                    android:editable="false"/>
+                <EditText
+                    android:id="@+id/username2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textSize="10sp"
+                    android:padding="10dp"
+                    android:editable="false"/>
+                <EditText
+                    android:id="@+id/emailProfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="10sp"
+                    android:padding="10dp"
+                    android:editable="false"/>
+                <EditText
+                    android:id="@+id/noTelpProfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textSize="10sp"
+
+                    android:padding="10dp"
+                    android:editable="false"/>
+                <Button
+                    android:id="@+id/logoutProfil"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="LOGOUT"
+                    android:clickable="true"
+                    android:textColor="#EDE9E9"
+                    android:layout_marginTop="40dp"
+                    android:background="#AA1A1A"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+<ProgressBar
+    android:id="@+id/progresBarProfil"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"/>
+</RelativeLayout>
